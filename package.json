@@ -1,7 +1,7 @@
 {
     "name": "JDblog",
-    "description": "A clean theme based on Casper",
-    "demo": "",
+    "description": "A clean theme for the JD site based on Casper.",
+    "demo": "https://junior-doctor.co.uk",
     "version": "0.1",
     "engines": {
         "ghost": ">=3.0.0",
