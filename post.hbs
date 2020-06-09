@@ -114,6 +114,8 @@ into the {body} of the default.hbs template --}}
                 {{> subscribe-form}}
             {{/if}}
 
+{{#has tag="#mailchimp-newsletter"}}
+
 <section class="subscribe-form">
 <div id="mc_embed_signup">
     <h3 class="subscribe-form-title">Subscribe to Junior Doctor</h3>
@@ -130,6 +132,8 @@ into the {body} of the default.hbs template --}}
     </form>
     </div>
 </section>
+
+{{/has}}
 
             {{!--
             <section class="post-full-comments">
