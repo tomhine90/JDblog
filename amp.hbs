@@ -40,7 +40,8 @@
                 <h1 class="post-title">{{title}}</h1>
                 <section class="post-meta">
                     <p class="author">by {{authors}}</p>
-                    <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
+                      <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+                      <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
                 </section>
             </header>
             {{#if feature_image}}
