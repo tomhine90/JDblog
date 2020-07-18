@@ -24,10 +24,10 @@
     {{amp_components}}
 
 {{!-- Google Auto Ads --}}
+<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
 
-<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
+{{!-- Google Analytics --}}
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 </head>
 
@@ -35,6 +35,18 @@
   <amp-auto-ads type="adsense"
           data-ad-client="ca-pub-6003557522922231">
   </amp-auto-ads>
+  <amp-analytics type="gtag" data-credentials="include">
+<script type="application/json">
+{
+  "vars" : {
+    "gtag_id": "UA-168894138-1",
+    "config" : {
+      "UA-168894138-1": { "groups": "default" }
+    }
+  }
+}
+</script>
+</amp-analytics>
 
     {{#post}}
     <header class="main-header">
