@@ -114,6 +114,12 @@ into the {body} of the default.hbs template --}}
                 {{> subscribe-form}}
             {{/if}}
 
+             {{#has tag="#comments"}}
+            <section class="post-full-comments">
+                <div class="fb-comments" data-href="{{url absolute="true"}}" data-numposts="5" data-width=""></div>
+            </section>
+            {{/has}}
+
 {{#has tag="#mailchimp-newsletter"}}
 
 <section class="subscribe-form">
@@ -134,12 +140,7 @@ into the {body} of the default.hbs template --}}
 </section>
 
 {{/has}}
-
-            {{!--
-            <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
-            </section>
-            --}}
+            
 
         </article>
 
@@ -233,3 +234,8 @@ into the {body} of the default.hbs template --}}
     });
 </script>
 {{/contentFor}}
+
+{{#has tag="#comments"}}
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0&appId=3455160991188968" nonce="I3NeLJWb"></script>
+{{/has}}
