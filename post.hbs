@@ -76,7 +76,7 @@ into the {body} of the default.hbs template --}}
                             <div class="byline-meta-content">
                                 <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
                                 <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
-                                <span><span class="bull">&bull;</span> <a href="#comments"><span class="fb-comments-count" data-href="{{url absolute="true"}}"></span> comments</a></span>
+                                 {{#has tag="#comments"}}<span><span class="bull">&bull;</span> <a href="#comments"><span class="fb-comments-count" data-href="{{url absolute="true"}}"></span> comments</a></span>{{/has}}
                             </div>
                         </section>
 
