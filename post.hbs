@@ -76,6 +76,7 @@ into the {body} of the default.hbs template --}}
                             <div class="byline-meta-content">
                                 <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
                                 <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
+                                <span><span class="fb-comments-count" data-href="{{url absolute="true"}}"></span> comments</span>
                             </div>
                         </section>
 
@@ -116,7 +117,7 @@ into the {body} of the default.hbs template --}}
 
              {{#has tag="#comments"}}
             <section class="post-full-comments">
-                <div class="fb-comments" data-href="{{url absolute="true"}}" data-numposts="5" data-width=""></div>
+                <div class="fb-comments" data-href="{{url absolute="true"}}" data-numposts="5" data-width="100%"></div>
             </section>
             <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0&appId=3455160991188968" nonce="I3NeLJWb"></script>
