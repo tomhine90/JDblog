@@ -1,8 +1,8 @@
 {
-    "name": "JDblog",
+    "name": "jdblog",
     "description": "A clean theme for the JD site based on Casper.",
     "demo": "https://junior-doctor.co.uk",
-    "version": "0.1",
+    "version": "1.0",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
@@ -23,7 +23,8 @@
         "postship": "git fetch && gulp release"
     },
     "author": {
-        "name": "Tom Hine"
+        "name": "Tom Hine",
+        "email": "hello@junior-doctor.co.uk"
     },
     "gpm": {
         "type": "theme",
