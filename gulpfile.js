@@ -134,7 +134,7 @@ exports.release = () => {
         return Promise.resolve();
     })
     .then(() => releaseUtils.releases.get({
-        userAgent: 'Casper',
+        userAgent: 'tomhine90',
         uri: `https://api.github.com/repos/${REPO_READONLY}/releases`
     }))
     .then((response) => {
@@ -168,7 +168,7 @@ exports.release = () => {
         preRelease: false,
         tagName: newVersion,
         releaseName: newVersion,
-        userAgent: 'Casper',
+        userAgent: 'tomhine90',
         uri: `https://api.github.com/repos/${REPO}/releases`,
         github: {
             token: config.github.token
