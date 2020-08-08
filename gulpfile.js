@@ -102,8 +102,6 @@ exports.release = () => {
     var packageJSON = JSON.parse(fs.readFileSync('./package.json'));
     const newVersion = packageJSON.version;
 
-    console.log('Exporting now');
-
     if (!newVersion || newVersion === '') {
         console.log(`Invalid version: ${newVersion}`);
         return;
