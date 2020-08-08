@@ -56,6 +56,7 @@ function css(done) {
         dest('assets/built/', {sourcemaps: '.'}),
         livereload()
     ], handleError(done));
+    console.log("Hello!");
 }
 
 function js(done) {
