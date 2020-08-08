@@ -2,7 +2,7 @@
     "name": "jdblog",
     "description": "A clean theme for the JD site based on Casper.",
     "demo": "https://junior-doctor.co.uk",
-    "version": "1.0",
+    "version": "1.0.0",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
