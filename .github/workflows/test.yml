@@ -12,4 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: yarn
+      - run: yarn pretest
       - run: yarn test:ci
+      - run: yarn preship
+      - run: yarn ship
+      - run: yarn postship
